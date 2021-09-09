@@ -98,10 +98,12 @@ header h2 {
 }
 
 .header-container {
-	width: 1140px;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column-reverse;
+	width: 85%;
+	margin: 30px auto;
+	max-width: 1140px;
 }
 
 /* SECTION  */
@@ -251,4 +253,34 @@ footer a {
 	justify-content: center;
 	align-items: center;
 	transition: 0.3s;
+}
+
+/* RESPONSIVE  */
+
+@media screen and (max-width: 650px) {
+	.section-1,
+	.section-2,
+	.section-3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: auto;
+	}
+	.container {
+		padding: 15px;
+	}
+	.img-container {
+		display: none;
+	}
+
+	footer ul {
+		min-width: 200px;
+	}
+	footer a {
+		width: 30px;
+		height: 30px;
+	}
+	footer i {
+		font-size: 0.7rem;
+	}
 }
